@@ -1,0 +1,23 @@
+{
+  "name": "nhl-color",
+  "version": "1.0.0",
+  "description": "Get NHL team's color.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "author": "beerett",
+  "keywords": [
+    "nhl",
+    "color",
+    "hockey"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.9.0",
+    "eslint-plugin-babel": "^4.1.2"
+  }
+}

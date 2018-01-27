@@ -1,0 +1,6 @@
+**/node_modules/**
+/data/**
+/nhl/*
+/lib/***
+/.gitignore
+package.json
