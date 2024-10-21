@@ -1,579 +1,690 @@
 const pureWhite = {
-  hex: '#ffffff',
+  hex: "#ffffff",
   rgb: [255, 255, 255],
 };
 
 const pureBlack = {
-  hex: '#000000',
+  hex: "#000000",
   rgb: [0, 0, 0],
 };
 
 const colors = {
-  NJD: {
-    fullName: 'New Jersey Devils',
-    mainColor: {
-      hex: '#E03A3E',
-      rgb: [200, 16, 46],
-    },
-    colors: {
-      white: pureWhite,
-      black: pureBlack
-    }
-  },
+  
   ANA: {
-    fullName: 'Anaheim Ducks',
+    fullName: "Anaheim Ducks",
     mainColor: {
-      hex: '#FC4C02',
+      hex: "#FC4C02",
       rgb: [252, 76, 2],
     },
     colors: {
+      orange: {
+        hex: '#CF45210',
+        rgb: [207,69,32],
+      },
       gold: {
-        hex: '#B6985A',
+        hex: "#B6985A",
         rgb: [182, 152, 90],
       },
       black: pureBlack,
-      white: pureWhite
-    }
+      white: pureWhite,
+    },
   },
   ARI: {
-    fullName: 'Arizona Coyotes',
+    fullName: "Arizona Coyotes",
     mainColor: {
-      hex: '#98012E',
+      hex: "#98012E",
       rgb: [152, 1, 46],
     },
     colors: {
       brickRed: {
-        hex: '#98012E',
+        hex: "#98012E",
         rgb: [140, 38, 51],
       },
       desertSand: {
-        hex: '#e2d6b5',
+        hex: "#e2d6b5",
         rgb: [226, 214, 181],
       },
       black: pureBlack,
       white: pureWhite,
-      },
     },
+  },
   BOS: {
-    fullName: 'Boston Bruns',
+    fullName: "Boston Bruins",
     mainColor: {
-      hex: '#fcb514',
+      hex: "#fcb514",
       rgb: [252, 181, 20],
     },
     colors: {
       gold: {
-        hex: '#98012E',
-        rgb: [252, 181, 20],
+        hex: "#FFB81C",
+        rgb: [255, 184, 28],
       },
       white: pureWhite,
       black: pureBlack,
-    },
-  },
-  CHI: {
-    fullName: 'Chicago Blackhawks',
-    mainColor: {
-      hex: '#c60c30',
-      rgb: [198, 12, 48],
-    },
-    colors: {
-      red: {
-        hex: '#c60c30',
-        rgb: [198, 12, 48],
-      },
-      black: pureBlack,
-      white: pureWhite,
     },
   },
   BUF: {
-    fullName: 'Buffalo Sabres',
+    fullName: "Buffalo Sabres",
     mainColor: {
-      hex: '#002d62',
-      rgb: [0, 45, 98],
+      hex: "#003087",
+      rgb: [0, 45, 135],
     },
     colors: {
-      navy: {
-        hex: '#002d62',
-        rgb: [0, 45, 98],
+      royalBlue: {
+        hex: "#003087",
+        rgb: [0, 45, 135],
       },
       white: pureWhite,
       gold: {
-        hex: '#fdb930',
-        rgb: [253, 185, 48],
+        hex: "#FFB81C",
+        rgb: [255, 184, 28],
       },
-      silver: {
-        hex: '#a7a9ac',
-        rgb: [167, 169, 172],
-      },
-    },
-  },
-  CGY: {
-    fullName: 'Calgary Flames',
-    mainColor: {
-      hex: '#c81022',
-      rgb: [200, 16, 46],
-    },
-    colors: {
       red: {
-        hex: '#c81022',
+        hex: "#C8102E",
         rgb: [200, 16, 46],
       },
-      gold: {
-        hex: '#fdbf12',
-        rgb: [253, 191, 18],
-      },
-      black: pureBlack,
-      white: pureWhite,
+      white: pureWhite
     },
   },
+  
   CAR: {
-    fullName: 'Carolina Hurricanes',
+    fullName: "Carolina Hurricanes",
     mainColor: {
-      hex: '#c8102e',
+      hex: "#c8102e",
       rgb: [200, 16, 46],
     },
     white: pureWhite,
     black: pureBlack,
     colors: {
       red: {
-        hex: '#c8102e',
+        hex: "#c8102e",
         rgb: [200, 16, 46],
       },
+      stormGray: {
+        hex: "#333F48",
+        rgb: [51, 63, 72]
+      },
+      silver: {
+        hex: "#A2AAAD",
+        rgb: [162, 170, 173]
+      },
+      black: pureBlack
     },
   },
-  DET: {
-    fullName: 'Detroit RedWings',
+  CGY: {
+    fullName: "Calgary Flames",
     mainColor: {
-      hex: '#e51837',
-      rgb: [229, 24, 55],
+      hex: "#C8102E",
+      rgb: [200, 16, 46],
     },
     colors: {
       red: {
-        hex: '#e51837',
-        rgb: [229, 24, 55],
+        hex: "#C8102E",
+        rgb: [200, 16, 46],
       },
+      gold: {
+        hex: "#F1BE48",
+        rgb: [241, 190, 72],
+      },
+      black: pureBlack,
+      white: pureWhite,
+    },
+  },
+  CHI: {
+    fullName: "Chicago Blackhawks",
+    mainColor: {
+      hex: "#C8102E",
+      rgb: [200, 16, 46],
+    },
+    colors: {
+      red: {
+        hex: "#C8102E",
+        rgb: [200, 16, 46],
+      },
+      gold: {
+        hex: "#CC8A00",
+        rgb: [204, 138, 0],
+      },
+      green: {
+        hex: "#00943D",
+        rgb: [0, 132, 61],
+      },
+      blue: {
+        hex: "#001871",
+        rgb: [0, 24, 113],
+      },
+      orange: {
+        hex: "#FF6720",
+        rgb: [255, 103, 32],
+      },
+      black: pureBlack,
       white: pureWhite,
     },
   },
   COL: {
-    fullName: 'Colorado Avalance',
+    fullName: "Colorado Avalance",
     mainColor: {
-      hex: '#822433',
+      hex: "#6F263D",
       rgb: [130, 36, 51],
     },
     colors: {
       burgundy: {
-        hex: '#822433',
+        hex: "#6F263D",
         rgb: [130, 36, 51],
       },
-      blue: {
-        hex: '#165788',
-        rgb: [22, 87, 136],
+      steelBlue: {
+        hex: "#236192",
+        rgb: [35, 97, 146],
       },
       silver: {
-        hex: '#85888B',
-        rgb: [133, 136, 139],
+        hex: "#A2AAAD",
+        rgb: [162, 170, 173],
       },
       black: pureBlack,
+      white: pureWhite,
     },
   },
   CBJ: {
-    fullName: 'Columbus Blue Jackets',
+    fullName: "Columbus Blue Jackets",
     mainColor: {
-      hex: '#041e42',
+      hex: "#041e42",
       rgb: [4, 30, 66],
     },
     colors: {
-      blue: {
-        hex: '#041e42',
+      unionBlue: {
+        hex: "#041E42",
         rgb: [4, 30, 66],
       },
-      red: {
-        hex: '#c8102e',
-        rgb: [200,16,46],
+      goalRed: {
+        hex: "#C8102E",
+        rgb: [200, 16, 46],
       },
-      silver: {
-        hex: '#8D9093',
-        rgb: [141,144,147],
+      capitalSilver: {
+        hex: "#A2AAAD",
+        rgb: [162, 170, 173],
       },
-      black: pureBlack,
       white: pureWhite,
     },
   },
   DAL: {
-    fullName: 'Dallas Stars',
+    fullName: "Dallas Stars",
     mainColor: {
-      hex: '#016F4A',
-      rgb: [1, 111, 74],
+      hex: "#00843D",
+      rgb: [0,132,61],
     },
     colors: {
-      green: {
-        hex: '#016F4A',
+      victoryGreen: {
+        hex: "#016F4A",
         rgb: [255, 184, 28],
       },
       silver: {
-        hex: '#A7A8AC',
-        rgb: [167, 168, 172],
+        hex: "#A2AAAD",
+        rgb: [162, 170, 173],
+      },
+      white: pureWhite,
+      blac: pureBlack
+    },
+  },
+  DET: {
+    fullName: "Detroit RedWings",
+    mainColor: {
+      hex: "#C8102E",
+      rgb: [200, 16, 46],
+    },
+    colors: {
+      red: {
+        hex: "#C8102E",
+        rgb: [200, 16, 46],
       },
       white: pureWhite,
     },
   },
-  LAC: {
-    fullName: 'Edmonton Oilers',
+  EDM: {
+    fullName: "Edmonton Oilers",
     mainColor: {
-      hex: '#013E7F',
-      rgb: [1, 62, 127],
+      hex: "#00205B",
+      rgb: [0, 32, 91],
     },
     colors: {
-      blue: {
-        hex: '#013E7F',
-        rgb: [1, 62, 127],
+      royalBlue: {
+        hex: "#013E7F",
+        rgb: [0, 32, 91],
       },
       orange: {
-        hex: '#eb6e1e',
-        rgb: [235, 110, 30],
+        hex: "#CF4520",
+        rgb: [207, 69, 32],
       },
       white: pureWhite,
     },
   },
   FLA: {
-    fullName: 'Florida Panthers',
+    fullName: "Florida Panthers",
     mainColor: {
-      hex: '#C51230',
-      rgb: [229, 26, 56],
+      hex: "#C8102E",
+      rgb: [200, 16, 46],
     },
     colors: {
       red: {
-        hex: '#C51230',
-        rgb: [229, 26, 56],
+        hex: "#C8102E",
+        rgb: [200, 16, 46],
       },
       blue: {
-        hex: '#002D62',
-        rgb: [0, 45,98],
+        hex: "#041E42",
+        rgb: [4, 30, 66],
       },
       gold: {
-        hex: '#F1B310',
-        rgb: [212,160,15],
+        hex: "#B9975B",
+        rgb: [185, 151, 91],
       },
       white: pureWhite,
     },
   },
-  MEM: {
-    fullName: 'Los Angeles Kings',
+  LAK: {
+    fullName: "Los Angeles Kings",
     mainColor: {
-      hex: '#23375b',
-      rgb: [35, 55, 91],
+      hex: "#A2AAAD",
+      rgb: [162, 170, 173],
     },
     colors: {
       silver: {
-        hex: '#B2B7BB',
-        rgb: [35, 55, 91],
+        hex: "#A2AAAD",
+        rgb: [162, 170, 173],
       },
       white: pureWhite,
       black: pureBlack,
     },
   },
   MIN: {
-    fullName: 'Minnesota Wild',
+    fullName: "Minnesota Wild",
     mainColor: {
-      hex: '#C51230',
-      rgb: [197, 18, 48],
+      hex: "#154734",
+      rgb: [21, 71, 52],
     },
     colors: {
       ironRangeRed: {
-        hex: '#862633',
-        rgb: [197,18,48],
+        hex: "#A6192E",
+        rgb: [166, 25, 46],
       },
       forestGreen: {
-        hex: '#004F30',
-        rgb: [0, 79, 48],
+        hex: "#154734",
+        rgb: [21, 71, 52],
       },
       harvestGold: {
-        hex: '#004F30',
-        rgb: [241, 179, 16],
+        hex: "#EAAA00",
+        rgb: [234, 170, 0],
       },
       minnesotaWheat: {
-        hex: '#EEE3C7',
-        rgb: [238, 227, 199],
+        hex: "#DDCBA4",
+        rgb: [221, 203, 164],
       },
       white: pureWhite,
     },
   },
   MTL: {
-    fullName: 'Montreal Canadiens',
+    fullName: "Montreal Canadiens",
     mainColor: {
-      hex: '#C51230',
-      rgb: [197,18,48],
+      hex: "#A6192E",
+      rgb: [166, 25, 46],
     },
     colors: {
       red: {
-        hex: '#C51230',
-        rgb: [197,18,48],
+        hex: "#A6192E",
+        rgb: [166, 25, 46],
       },
       blue: {
-        hex: '#083A81',
-        rgb: [8,58,121],
+        hex: "#001E62",
+        rgb: [0, 30, 98],
       },
       white: pureWhite,
     },
   },
   NSH: {
-    fullName: 'Nashville Predators',
+    fullName: "Nashville Predators",
     mainColor: {
-      hex: '#FDBB30',
-      rgb: [253, 187, 48],
+      hex: "#FFB81C",
+      rgb: [255, 184, 28],
     },
     colors: {
       gold: {
-        hex: '#FDBB30',
-        rgb: [253, 187, 48],
+        hex: "#FDBB30",
+        rgb: [255, 184, 28],
       },
-      navy: {
-        hex: '#002D62',
-        rgb: [0, 45, 98],
+      darkBlue: {
+        hex: "#041E42",
+        rgb: [4, 30, 66],
       },
       white: pureWhite,
     },
   },
-  NYI: {
-    fullName: 'New York Islanders',
+  NJD: {
+    fullName: "New Jersey Devils",
     mainColor: {
-      hex: '#F57D31',
-      rgb: [245,125,49],
+      hex: "#C8102E",
+      rgb: [200, 16, 46],
+    },
+    red: {
+      hex: "#C8102E",
+      rgb: [200, 16, 46],
+    },
+    green: {
+      hex: "#046A38",
+      rgb: [4, 106, 56]
+    },
+    colors: {
+      white: pureWhite,
+      black: pureBlack,
+    },
+  },
+  NYI: {
+    fullName: "New York Islanders",
+    mainColor: {
+      hex: "#003087",
+      rgb: [0, 48, 135],
     },
     colors: {
       orange: {
-        hex: '#F57D31',
-        rgb: [245,125,49],
+        hex: "#FC4C02",
+        rgb: [252, 76, 2],
       },
       blue: {
-        hex: '#00529B',
-        rgb: [0,82,155],
+        hex: "#003087",
+        rgb: [0, 48, 135],
       },
       white: pureWhite,
     },
   },
   NYR: {
-    fullName: 'New York Rangers',
+    fullName: "New York Rangers",
     mainColor: {
-      hex: '#E51837',
-      rgb: [230, 57, 63],
+      hex: "#0032A0",
+      rgb: [0, 50, 160],
     },
     colors: {
       red: {
-        hex: '#E51837',
-        rgb: [230,57,63],
+        hex: "#C8102E",
+        rgb: [200, 16, 46],
       },
       blue: {
-        hex: '#0161AB',
-        rgb: [1, 97, 171],
+        hex: "#0032A0",
+        rgb: [0, 50, 160],
       },
       white: pureWhite,
     },
   },
   OTT: {
-    fullName: 'Ottawa Senators',
+    fullName: "Ottawa Senators",
     mainColor: {
-      hex: '#E51837',
-      rgb: [229, 24, 55],
+      hex: "#C8102E",
+      rgb: [200, 16, 46],
     },
     colors: {
       red: {
-        hex: '#E51837',
-        rgb: [229, 24, 55],
+        hex: "#C8102E",
+        rgb: [200, 16, 46],
       },
       gold: {
-        hex: '#D4A00F',
-        rgb: [212, 160, 15],
+        hex: "#B9975B",
+        rgb: [185, 151, 89],
       },
       white: pureWhite,
       black: pureBlack,
     },
   },
   PHI: {
-    fullName: 'Philadelphia Flyers',
+    fullName: "Philadelphia Flyers",
     mainColor: {
-      hex: '#F74902',
-      rgb: [247, 73, 2],
+      hex: "#CF4520",
+      rgb: [207, 69, 32],
     },
     colors: {
       flyersOrange: {
-        hex: '#F74902',
-        rgb: [247, 73, 2],
+        hex: "#CF4520",
+        rgb: [207, 69, 32],
       },
       white: pureWhite,
       black: pureBlack,
     },
   },
   PIT: {
-    fullName: 'Pittsburgh Penguins',
+    fullName: "Pittsburgh Penguins",
     mainColor: {
-      hex: '#CFC493',
-      rgb: [207, 196, 147],
+      hex: "#FFB81C",
+      rgb: [255, 184, 28],
     },
     colors: {
       gold: {
-        hex: '#CFC493',
-        rgb: [207, 196, 147],
+        hex: "#FFB81C",
+        rgb: [255, 184, 28],
       },
       black: pureBlack,
       white: pureWhite,
-      yellow: {
-        hex: '#FFB81C',
-        rgb: [255, 184, 28],
-      },
     },
   },
   STL: {
-    fullName: 'St. Louis Blues',
+    fullName: "St. Louis Blues",
     mainColor: {
-      hex: '#00529C',
-      rgb: [0, 82, 156],
+      hex: "#003087",
+      rgb: [0, 48, 135],
     },
     colors: {
       blue: {
-        hex: '#00529C',
-        rgb: [253, 185, 48],
+        hex: "#003087",
+        rgb: [0, 48, 135],
       },
       gold: {
-        hex: '#FDB930',
-        rgb: [253, 185, 48],
+        hex: "#FFB81C",
+        rgb: [255, 184, 28],
       },
-      navy: {
-        hex: '#002D62',
-        rgb: [0, 45, 98],
+      darkBlue: {
+        hex: "#041E42",
+        rgb: [4, 30, 66],
+      },
+      red: {
+        hex: "#C8102E",
+        rgb: [200, 16, 46],
       },
       white: pureWhite,
     },
   },
   SJS: {
-    fullName: 'San Jose Sharks',
+    fullName: "San Jose Sharks",
     mainColor: {
-      hex: '#007889',
-      rgb: [0, 120, 137],
+      hex: "#006271",
+      rgb: [0, 98, 113],
     },
     colors: {
-      pacificTeal: {
-        hex: '#007889',
-        rgb: [0, 120, 137],
+      deepPacificTeal: {
+        hex: "#006271",
+        rgb: [0, 98, 113],
       },
-      orange: {
-        hex: '#F4901E',
+      burntOrange: {
+        hex: "#F4901E",
         rgb: [244, 144, 30],
+      },
+      grey: {
+        hex: "#B2B4B2",
+        rgb: [178, 180, 178],
       },
       white: pureWhite,
       black: pureBlack,
     },
   },
-  TBL: {
-    fullName: 'Tampa Bay Lightning Kings',
+  SEA: {
+    fullName: "Seattle Kraken",
     mainColor: {
-      hex: '#003D7C',
-      rgb: [0,61,124],
+      hex: "#051C2C",
+      rgb: "5, 28, 44"
+    },
+    colors: {
+      deepSeeBlue: {
+        hex: "#051C2C",
+        rgb: [5, 28, 44]
+      },
+      iceBlue: {
+        hex: "#9CDBD9",
+        rgb: [156, 219, 217]
+      },
+      shadowBlue: {
+        hex: "#6BA4B8",
+        rgb: [107, 164, 184] 
+      },
+      redAlert: {
+        hex: "#C8102E",
+        rgb: [200, 16, 46]
+      },
+      boundlessBlue: {
+        hex: "#425563",
+        rgb: [66, 85, 99]
+      }
+    }
+  },
+  TBL: {
+    fullName: "Tampa Bay Lightning",
+    mainColor: {
+      hex: "#00205B",
+      rgb: [0, 32, 91],
     },
     colors: {
       blue: {
-        hex: '#003D7C',
-        rgb: [0,61,124],
+        hex: "#00205B",
+        rgb: [0, 32, 91],
       },
       white: pureWhite,
       black: pureBlack,
     },
   },
   TOR: {
-    fullName: 'Toronto Maple Leafs',
+    fullName: "Toronto Maple Leafs",
     mainColor: {
-      hex: '#013E7F',
-      rgb: [1, 62, 127],
+      hex: "#00205B",
+      rgb: [0, 32, 91],
     },
     colors: {
       blue: {
-        hex: '#013E7F',
+        hex: "#013E7F",
         rgb: [1, 62, 127],
       },
       white: pureWhite,
     },
   },
-  VAN: {
-    fullName: 'Vancouver Canucks',
+  UHC: {
+    fullName: "Utah Hockey Club",
     mainColor: {
-      hex: '#003E7E',
-      rgb: [0, 62, 126],
+      hex: "#69b3e7",
+      rgb: [105, 179, 231],
     },
     colors: {
       blue: {
-        hex: '#003E7E',
-        rgb: [0, 62, 126],
+        hex: "#69b3e7",
+        rgb: [105, 179, 231],
+      },
+      black: {
+        hex: '#010101',
+        rgb: [1,1,1],
+      },
+      white: {
+        hex: '#FFFFFF',
+        rgb:[255,255,255]
+      }
+    },
+  },
+  VAN: {
+    fullName: "Vancouver Canucks",
+    mainColor: {
+      hex: "#00205B",
+      rgb: [0, 32, 91],
+    },
+    colors: {
+      blue: {
+        hex: "#00205B",
+        rgb: [0, 32, 91],
       },
       green: {
-        hex: '#008852',
-        rgb: [0, 136, 82],
+        hex: "#00843D",
+        rgb: [0, 132, 61],
       },
       silver: {
-        hex: '#ADAEB2',
-        rgb: [173, 174, 178],
+        hex: "#97999B",
+        rgb: [151, 153, 155],
+      },
+      darkBlue: {
+        hex: "#051C2C",
+        rgb: [5, 28, 44]
       },
       white: pureWhite,
     },
   },
   VGK: {
-    fullName: 'Vegas Golden Knights',
+    fullName: "Vegas Golden Knights",
     mainColor: {
-      hex: '#333F48',
-      rgb: [51, 63, 72],
+      hex: "#B9975B",
+      rgb: [185, 151, 91],
     },
     colors: {
-      navy: {
-        hex: '#333F48',
+      steelGrey: {
+        hex: "#333F48",
         rgb: [51, 63, 72],
       },
       black: pureBlack,
       gold: {
-        hex: '#f9a01b',
+        hex: "#B9975B",
         rgb: [137, 115, 76],
       },
       red: {
-        hex: '#C8102E',
+        hex: "#C8102E",
         rgb: [200, 16, 46],
       },
       white: pureWhite,
     },
   },
   WAS: {
-    fullName: 'Washington Capitals',
+    fullName: "Washington Capitals",
     mainColor: {
-      hex: '#002147',
-      rgb: [0, 33, 71],
+      hex: "#C8102E",
+      rgb: [200, 16, 46],
     },
     colors: {
-      navyBlue: {
-        hex: '#002147',
-        rgb: [0, 33, 71],
+      navy: {
+        hex: "#C8102E",
+        rgb: [4, 30, 66],
       },
       red: {
-        hex: '#C60C30',
-        rgb: [198, 12, 48],
+        hex: "#C8102E",
+        rgb: [200, 16, 46],
       },
       white: pureWhite,
     },
   },
   WPG: {
-    fullName: 'Winnepeg Jets',
+    fullName: "Winnepeg Jets",
     mainColor: {
-      hex: '#002D62',
-      rgb: [0, 45, 98],
+      hex: "#041E42",
+      rgb: [4, 30, 66],
     },
     colors: {
       polarNightBlue: {
-        hex: '#002D62',
-        rgb: [0, 45, 98],
+        hex: "#041E42",
+        rgb: [4, 30, 66],
       },
       aviatorBlue: {
-        hex: '#006EC8',
-        rgb: [0,110,200],
+        hex: "#004C97",
+        rgb: [0, 76, 151],
       },
       silver: {
-        hex: '#8D8D8F',
-        rgb: [141, 141, 143],
+        hex: "#A2AAAD",
+        rgb: [162, 170, 173],
+      },
+      red: {
+        hex: "#A6192E",
+        rgb: [166, 25, 46],
+      },
+      darkRed: {
+        hex: "#782F40",
+        rgb: [120, 47, 64],
+      },
+      darkGray: {
+        hex: "#53565A",
+        rgb: [83, 86, 90],
       },
       white: pureWhite,
     },
